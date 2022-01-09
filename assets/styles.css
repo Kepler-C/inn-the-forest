@@ -34,7 +34,7 @@ header, footer {
 }
 
 .title {
-  font-size: 30px;
+  font-size: 35px;
 }
 
 .one-col {
@@ -59,4 +59,40 @@ header, footer {
 
 .col--text {
   padding: 20px;
+}
+
+nav {
+  background-color: #363945;
+}
+
+.navbar {
+  display: flex;
+  list-style-type: none;
+  margin: 0px;
+}
+
+.navbar li {
+  padding: 10px;
+  font-size: 25px;
+}
+
+.navbar a:link, a:visited, a:hover, a:active {
+  text-decoration: none;
+  color:white;
+}
+
+.navbar li:hover {
+  background-color: #9A8B4F;
+}
+
+.main-menu {
+  display: flex;
+  justify-content: center;
+}
+
+@media screen and  (max-width: 1024px) {
+  .two-cols{
+    flex-direction: column-reverse;
+  }
+  
 }
