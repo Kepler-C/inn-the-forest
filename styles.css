@@ -4,11 +4,14 @@ body{
   display:flex; 
   flex-direction:column;  
   text-align: center;
+  font-family: 'M PLUS 1', sans-serif;
+  font-family: 'Montserrat', sans-serif;
 }
 
 header{ 
   min-height:50px; 
-  background-color: #9A8B4F; 
+  background-color: #9A8B4F;
+  color: white;
 }
 
 footer{ 
