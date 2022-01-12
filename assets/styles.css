@@ -146,6 +146,12 @@ nav {
   color: black
 }
 
+.link-button:hover {
+  background-color: #939597;
+  color: white;
+  border-color: #939597;
+}
+
 @media screen and (max-width: 1100px) {
   .col--user-info input,
   .col--user-info button,
