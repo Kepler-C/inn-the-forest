@@ -96,3 +96,60 @@ nav {
     flex-direction: column-reverse;
   }
 }
+
+.col--user-info {
+  display: flex;
+  flex-direction: column;
+  width: 60%;
+}
+
+.one-col--user-info {
+  align-items: center;
+}
+
+.one-col--user-info > * {
+  margin: 10px 0;
+}
+
+.menu-element--selected {
+  background-color: #9A8B4F;
+  color: white;
+}
+
+.col--user-info input,
+.col--user-info button,
+.link-button {
+  width: 35%;
+  margin: auto;
+  text-align: center;
+  height: 30px;
+  padding: 3px;
+}
+
+
+.link-button {
+  border: solid 1px black;
+}
+
+.button {
+  margin-top: 3px;
+  margin-bottom: 3px;
+}
+
+.control-buttons {
+  display: flex;
+  justify-content: space-between;
+}
+
+.link-button:link, .link-button:visited, .link-button:hover, .link-button:active {
+  text-decoration: none;
+  color: black
+}
+
+@media screen and (max-width: 1100px) {
+  .col--user-info input,
+  .col--user-info button,
+  .link-button {
+    width: 100%;
+  }
+}

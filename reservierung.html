@@ -19,20 +19,42 @@
 				<li class="menu-element"><a href="#">Menü</a></li>
 				<li class="menu-element"><a href="#">Angebote</a></li>
 				<li class="menu-element"><a href="#">Reservierung</a></li>
-				<li class="menu-element"><a href="#">Anfahrt</a></li>
+				<li class="menu-element menu-element--selected"><a href="#">Anfahrt</a></li>
 			</ul>
 		</nav>
 	</header>
 
 	<div class="main-content">
-		<section class="two-cols">
-			<div class="col col--text">
-				Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua.
+		<section class="one-col one-col--user-info">
+			<div class="col col--text col--user-info">
+				<label for="date-input">Datum</label>
+                <input id="date-input" type="date" name="reservation-date">
 			</div>
-			<div class="col col--image">
-				<img src="assets/gericht-homepage.jpg">
+			<div class="col col--text col--user-info">
+				<label for="time-input">Uhrzeit</label>
+                <input id="time-input" type="time" name="reservation-time">
+			</div>
+            <div class="col col--text col--user-info">
+				<label for="guests-input">Anzahl (max. 8 Personen)</label>
+                <input id="guests-input" type="number" name="number-guests" min="1" max="8">
+			</div>
+            <div class="col col--text col--user-info">
+                <a href="#" class="link-button">
+                    <p class="button">Platzauswahl (optional)</p>
+                </a>
+			</div>
+            <div class="col col--text col--user-info">
+                <a href="#" class="link-button">
+    				<p class="button">Platzauswahl (optional)</p>
+                </a>
 			</div>
 		</section>
+
+        <div class="control-buttons">
+            <button class="control-button" type="button">Abbrechen</button> 
+            <button class="control-button" type="button">Weiter</button>
+        </div>
+
 	</div>
 
 	<footer class="one-col">
