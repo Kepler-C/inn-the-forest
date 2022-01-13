@@ -2,13 +2,20 @@ $(document).ready(function () {
   const LOGIN_DATA = { username: 12345, password: "abc" };
 
   $("#overlay").on("click", () => {
+    closeModal();
+  });
+  $("#modal__close").on("click", () => {
+    closeModal();
+  });
+
+  function closeModal() {
     $("#overlay").animate({ opacity: 0 }, 200, () => {
       $("#overlay").css("display", "none");
     });
     $("#modal").animate({ opacity: 0 }, 200, () => {
       $("#modal").css("display", "none");
     });
-  });
+  }
 
   $("#login").on("click", () => {
     $("#modal").css("display", "flex");
