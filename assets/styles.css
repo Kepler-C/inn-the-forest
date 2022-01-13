@@ -1,14 +1,14 @@
-body { 
+body {
   height: 100vh;
   margin: 0;
-  font-family: 'M PLUS 1', sans-serif;
-  font-family: 'Montserrat', sans-serif;
+  font-family: "M PLUS 1", sans-serif;
+  font-family: "Montserrat", sans-serif;
   text-align: center;
 }
 
 header {
   min-height: 50px;
-  background-color: #9A8B4F;
+  background-color: #9a8b4f;
   color: white;
 }
 
@@ -23,14 +23,15 @@ section {
   border: 1px solid #d3cfbf;
 }
 
-footer { 
-  min-height:50px; 
+footer {
+  min-height: 50px;
   background-color: #363945;
   color: white;
-  margin-top:auto; 
+  margin-top: auto;
 }
 
-header, footer {
+header,
+footer {
   flex-shrink: 0;
 }
 
@@ -39,7 +40,7 @@ header, footer {
 }
 
 .one-col {
-  display: flex; 
+  display: flex;
   flex-direction: column;
   justify-content: center;
 }
@@ -52,7 +53,7 @@ header, footer {
 .two-cols img {
   max-height: 300px;
 }
- 
+
 .col {
   margin: 10px;
   flex-basis: 50%;
@@ -77,13 +78,16 @@ nav {
   font-size: 25px;
 }
 
-.navbar a:link, a:visited, a:hover, a:active {
+.navbar a:link,
+a:visited,
+a:hover,
+a:active {
   text-decoration: none;
-  color:white;
+  color: white;
 }
 
 .navbar li:hover {
-  background-color: #9A8B4F;
+  background-color: #9a8b4f;
 }
 
 .main-menu {
@@ -91,7 +95,7 @@ nav {
   justify-content: center;
 }
 
-@media screen and  (max-width: 1024px) {
+@media screen and (max-width: 1024px) {
   .two-cols {
     flex-direction: column-reverse;
   }
@@ -112,7 +116,7 @@ nav {
 }
 
 .menu-element--selected {
-  background-color: #9A8B4F;
+  background-color: #9a8b4f;
   color: white;
 }
 
@@ -125,7 +129,6 @@ nav {
   height: 30px;
   padding: 3px;
 }
-
 
 .link-button {
   border: solid 1px black;
@@ -141,15 +144,45 @@ nav {
   justify-content: space-between;
 }
 
-.link-button:link, .link-button:visited, .link-button:hover, .link-button:active {
+.link-button:link,
+.link-button:visited,
+.link-button:hover,
+.link-button:active {
   text-decoration: none;
-  color: black
+  color: black;
 }
 
 .link-button:hover {
   background-color: #939597;
   color: white;
   border-color: #939597;
+}
+
+/* anfahrt */
+#location__wrapper {
+  display: flex;
+  padding-top: 20px;
+}
+
+#location {
+  max-width: 50vw;
+}
+
+#location__infos {
+  padding: 20px 40px;
+  display: flex;
+  flex-direction: column;
+  text-align: left;
+  justify-content: center;
+  background-color: rgb(241, 241, 241);
+  margin-left: 20px;
+  border-radius: 10px;
+}
+
+#location__header {
+  font-weight: 900;
+  font-size: 3rem;
+  margin-bottom: 30px;
 }
 
 @media screen and (max-width: 1100px) {

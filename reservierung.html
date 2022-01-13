@@ -1,65 +1,70 @@
 <!DOCTYPE html>
 <html>
+  <head>
+    <link rel="stylesheet" href="assets/styles.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=M+PLUS+1:wght@200;400&family=Montserrat:wght@300&display=swap"
+      rel="stylesheet"
+    />
+  </head>
 
-<head>
-  <link rel="stylesheet" href="assets/styles.css">
-	<link rel="preconnect" href="https://fonts.googleapis.com">
-	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-	<link href="https://fonts.googleapis.com/css2?family=M+PLUS+1:wght@200;400&family=Montserrat:wght@300&display=swap" rel="stylesheet"> 
-</head>
+  <body class="one-col">
+    <header class="one-col">
+      <h1 class="title">Inn The Forest</h1>
+      <nav class="main-menu">
+        <ul class="navbar">
+          <li class="menu-element"><a href="#">Menü</a></li>
+          <li class="menu-element"><a href="#">Angebote</a></li>
+          <li class="menu-element menu-element--selected">
+            <a href="#">Reservierung</a>
+          </li>
+          <li class="menu-element"><a href="anfahrt.html">Anfahrt</a></li>
+        </ul>
+      </nav>
+    </header>
 
-<body class="one-col">
-
-	<header class="one-col">
-		<h1 class="title">
-			Inn The Forest
-		</h1>
-		<nav class="main-menu">
-			<ul class="navbar">
-				<li class="menu-element"><a href="#">Menü</a></li>
-				<li class="menu-element"><a href="#">Angebote</a></li>
-				<li class="menu-element menu-element--selected"><a href="#">Reservierung</a></li>
-				<li class="menu-element"><a href="#">Anfahrt</a></li>
-			</ul>
-		</nav>
-	</header>
-
-	<div class="main-content">
-		<section class="one-col one-col--user-info">
-			<div class="col col--text col--user-info">
-				<label for="date-input">Datum</label>
-                <input id="date-input" type="date" name="reservation-date">
-			</div>
-			<div class="col col--text col--user-info">
-				<label for="time-input">Uhrzeit</label>
-                <input id="time-input" type="time" name="reservation-time">
-			</div>
-            <div class="col col--text col--user-info">
-				<label for="guests-input">Anzahl (max. 8 Personen)</label>
-                <input id="guests-input" type="number" name="number-guests" min="1" max="8">
-			</div>
-            <div class="col col--text col--user-info">
-                <a href="#" class="link-button">
-                    <p class="button">Platzauswahl (optional)</p>
-                </a>
-			</div>
-            <div class="col col--text col--user-info">
-                <a href="#" class="link-button">
-    				<p class="button">Platzauswahl (optional)</p>
-                </a>
-			</div>
-		</section>
-
-        <div class="control-buttons">
-            <button class="control-button" type="button">Abbrechen</button> 
-            <button class="control-button" type="button">Weiter</button>
+    <div class="main-content">
+      <section class="one-col one-col--user-info">
+        <div class="col col--text col--user-info">
+          <label for="date-input">Datum</label>
+          <input id="date-input" type="date" name="reservation-date" />
         </div>
+        <div class="col col--text col--user-info">
+          <label for="time-input">Uhrzeit</label>
+          <input id="time-input" type="time" name="reservation-time" />
+        </div>
+        <div class="col col--text col--user-info">
+          <label for="guests-input">Anzahl (max. 8 Personen)</label>
+          <input
+            id="guests-input"
+            type="number"
+            name="number-guests"
+            min="1"
+            max="8"
+          />
+        </div>
+        <div class="col col--text col--user-info">
+          <a href="#" class="link-button">
+            <p class="button">Platzauswahl (optional)</p>
+          </a>
+        </div>
+        <div class="col col--text col--user-info">
+          <a href="#" class="link-button">
+            <p class="button">Platzauswahl (optional)</p>
+          </a>
+        </div>
+      </section>
 
-	</div>
+      <div class="control-buttons">
+        <button class="control-button" type="button">Abbrechen</button>
+        <button class="control-button" type="button">Weiter</button>
+      </div>
+    </div>
 
-	<footer class="one-col">
-		<div>Inn The Forest | 2022</div>
-	</footer>
-</body>
-
-</html> 
+    <footer class="one-col">
+      <div>Inn The Forest | 2022</div>
+    </footer>
+  </body>
+</html>
