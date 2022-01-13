@@ -71,6 +71,7 @@ nav {
   display: flex;
   list-style-type: none;
   margin: 0px;
+  position: relative;
 }
 
 .navbar li {
@@ -158,7 +159,26 @@ a:active {
   border-color: #939597;
 }
 
+#login {
+  position: absolute;
+  right: 10px;
+  height: 30px;
+  margin: 10px 0;
+  padding: 0 10px;
+  display: flex;
+  align-items: center;
+  background-color: white;
+  color: #47525e;
+  border-radius: 10px;
+  font-weight: bolder;
+}
+
+#login:hover {
+  cursor: pointer;
+}
+
 /* anfahrt */
+
 #location__wrapper {
   display: flex;
   padding-top: 20px;
@@ -207,6 +227,88 @@ a:active {
 
 .menu__plate img {
   width: 20vw;
+}
+
+/* login */
+
+#overlay {
+  z-index: 10;
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100vh;
+  width: 100vw;
+  background-color: #93959738;
+  backdrop-filter: blur(10px);
+  display: none;
+}
+
+#modal {
+  z-index: 11;
+  background-color: white;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  display: none;
+  flex-direction: column;
+  padding: 20px 60px;
+  border-radius: 10px;
+}
+
+#modal__close {
+  position: absolute;
+  right: 20px;
+  top: 10px;
+  font-size: 2rem;
+  font-weight: bolder;
+  color: gray;
+  transition: 0.5s;
+}
+
+#modal__close:hover {
+  cursor: pointer;
+  color: rgb(218, 0, 0);
+}
+
+#modal__title {
+  font-size: 4rem;
+  font-weight: bolder;
+  margin: 20px 0;
+}
+
+.modal__input {
+  margin: 10px 0;
+  padding: 15px;
+  font-size: 1rem;
+  border: 1px solid gray;
+  border-radius: 5px;
+}
+
+#modal__submit {
+  background-color: #47525e;
+  color: white;
+  padding: 15px;
+  margin: 10px 0;
+  font-size: 1rem;
+  border: 1px solid gray;
+  border-radius: 5px;
+}
+
+#modal__submit:hover {
+  filter: brightness(1.2);
+  cursor: pointer;
+}
+
+#modal__forgetPassword:hover {
+  cursor: pointer;
+}
+
+#modal__error {
+  display: none;
+  color: red;
+  font-weight: bolder;
+  font-size: small;
 }
 
 @media screen and (max-width: 1100px) {
