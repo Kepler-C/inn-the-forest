@@ -38,4 +38,8 @@ $(document).ready(function () {
   $(".modal__input").on("input", () => {
     $("#modal__error").css("display", "none");
   });
+
+  $("#logout").on("click", () => {
+    location.href = "index.html";
+  });
 });
