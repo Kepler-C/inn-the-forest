@@ -241,6 +241,7 @@ a:active {
   background-color: #93959738;
   backdrop-filter: blur(10px);
   display: none;
+  opacity: 0;
 }
 
 #modal {
@@ -254,6 +255,7 @@ a:active {
   flex-direction: column;
   padding: 20px 60px;
   border-radius: 10px;
+  opacity: 0;
 }
 
 #modal__close {
