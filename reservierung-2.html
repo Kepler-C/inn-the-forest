@@ -28,44 +28,46 @@
       </nav>
     </header>
 
-    <div class="main-content">
-      <section class="one-col one-col--user-info">
-        <div class="col col--text col--user-info">
-          <label for="fname-input">Vorname</label>
-          <input id="fname-input" type="text" name="first-name" />
-        </div>
-
-        <div class="col col--text col--user-info">
-          <label for="lname-input">Nachname</label>
-          <input id="lname-input" type="text" name="last-name" />
-        </div>
-
-        <div class="col col--text col--user-info">
-          <label for="phone-input">Telefon</label>
-          <input id="phone-input" type="tel" name="phone-number" />
-        </div>
-
-        <div class="col col--text col--user-info">
-          <label for="mail-input">Email</label>
-          <input id="mail-input" type="text" name="e-mail" />
-        </div>
-
-      </section>
-
-      
-
-      <div class="control-buttons" style="margin: 24pt; ">
-        <div class="control-button" " >
-          <a href="index.html" class="link-control-button" ">Abbrechen</a>
-        </div>
-        <div class="control-button" >
-          <a href="reservierung.html" class="link-control-button" ">Zurück</a>
-        </div>
-        <div class="control-button" >
-          <a href="reservierung-3.html" class="link-control-button" ">Weiter</a>
-        </div>
+      <div class="main-content">
+        <form action="reservierung-3.html">
+          <section class="one-col one-col--user-info">
+            <div class="col col--text col--user-info">
+              <label for="fname-input">Vorname</label>
+              <input id="fname-input" type="text" name="first-name" required/>
+            </div>
+    
+            <div class="col col--text col--user-info">
+              <label for="lname-input">Nachname</label>
+              <input id="lname-input" type="text" name="last-name" required/>
+            </div>
+    
+            <div class="col col--text col--user-info">
+              <label for="phone-input">Telefon</label>
+              <input id="phone-input" type="tel" name="phone-number" required/>
+            </div>
+    
+            <div class="col col--text col--user-info">
+              <label for="mail-input">Email</label>
+              <input id="mail-input" type="email" name="e-mail" required/>
+            </div>
+    
+          </section>
+    
+          
+    
+          <div class="control-buttons" style="margin: 24pt; ">
+            <div class="control-button">
+              <a href="index.html" class="link-control-button">Abbrechen</a>
+            </div>
+            <div class="control-button" >
+              <a href="reservierung.html" class="link-control-button">Zurück</a>
+            </div>
+            <div class="control-button">
+              <button class="button_submit" type="submit">Weiter</button>
+            </div>
+          </div>
+        </form>
       </div>
-    </div>
 
     <footer class="one-col">
       <div>Inn The Forest | 2022</div>

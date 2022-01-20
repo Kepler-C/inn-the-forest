@@ -29,45 +29,48 @@
     </header>
 
     <div class="main-content">
-      <section class="one-col one-col--user-info">
-        <div class="col col--text col--user-info">
-          <label for="date-input">Datum</label>
-          <input id="date-input" type="date" name="reservation-date" />
-        </div>
-        <div class="col col--text col--user-info">
-          <label for="time-input">Uhrzeit</label>
-          <input id="time-input" type="time" name="reservation-time" />
-        </div>
-        <div class="col col--text col--user-info">
-          <label for="guests-input">Anzahl (max. 8 Personen)</label>
-          <input
-            id="guests-input"
-            type="number"
-            name="number-guests"
-            min="1"
-            max="8"
-          />
-        </div>
-        <div class="col col--text col--user-info">
-          <a href="platzauswahl.html" class="link-button">
-            <p class="button">Platzauswahl (optional)</p>
-          </a>
-        </div>
-        <div class="col col--text col--user-info">
-          <a href="#" class="link-button">
-            <p class="button">Menüauswahl (optional)</p>
-          </a>
-        </div>
-      </section>
+      <form action="reservierung-2.html">
+        <section class="one-col one-col--user-info">
+          <div class="col col--text col--user-info">
+            <label for="date-input">Datum</label>
+            <input id="date-input" type="date" name="reservation-date" required/>
+          </div>
+          <div class="col col--text col--user-info">
+            <label for="time-input">Uhrzeit</label>
+            <input id="time-input" type="time" name="reservation-time" required/>
+          </div>
+          <div class="col col--text col--user-info">
+            <label for="guests-input">Anzahl (max. 8 Personen)</label>
+            <input
+              id="guests-input"
+              type="number"
+              name="number-guests"
+              min="1"
+              max="8"
+              required
+            />
+          </div>
+          <div class="col col--text col--user-info">
+            <a href="platzauswahl.html" class="link-button">
+              <p class="button">Platzauswahl (optional)</p>
+            </a>
+          </div>
+          <div class="col col--text col--user-info">
+            <a href="#" class="link-button">
+              <p class="button">Menüauswahl (optional)</p>
+            </a>
+          </div>
+        </section>
 
-      <div class="control-buttons" style="margin: 24pt; ">
-        <div class="control-button">
-          <a href="index.html" class="link-control-button">Abbrechen</a>
+        <div class="control-buttons" style="margin: 24pt; ">
+          <div class="control-button">
+            <a href="index.html" class="link-control-button">Abbrechen</a>
+          </div>
+          <div class="control-button" >
+            <button class="button_submit" type="submit">Weiter</button>
+          </div>
         </div>
-        <div class="control-button" >
-          <a href="reservierung-2.html" class="link-control-button">Weiter</a>
-        </div>
-      </div>
+      </form>
     </div>
 
     <footer class="one-col">

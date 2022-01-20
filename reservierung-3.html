@@ -29,34 +29,35 @@
     </header>
 
     <div class="main-content">
-      <section class="one-col one-col--user-info">
-        <div class="col col--text col--user-info">
-          <label for="payment">Bezahlungsmethode (optional)</label>
-          <button class="control-button" type="button">Visa</button>
-          <button class="control-button" type="button">Mastercard</button>
-          <button class="control-button" type="button">PayPal</button>
-          <button class="control-button" type="button">Klarna</button>
-        </div>
+      <form>
+        <section class="one-col one-col--user-info">
+          <div class="col col--text col--user-info">
+            <label for="payment">Bezahlungsmethode (optional)</label>
+            <button class="control-button" type="button">Visa</button>
+            <button class="control-button" type="button">Mastercard</button>
+            <button class="control-button" type="button">PayPal</button>
+            <button class="control-button" type="button">Klarna</button>
+          </div>
 
-        <div class="col col--text col--user-info">
-          <label for="comments">Kommentar</label>
-          <textarea id="comments" name="comments" placeholder="Besondere Wünsche..." rows="5" cols="50"></textarea>
-        </div>
+          <div class="col col--text col--user-info">
+            <label for="comments">Kommentar</label>
+            <textarea id="comments" name="comments" placeholder="Besondere Wünsche..." rows="5" cols="50"></textarea>
+          </div>
 
-      </section>
+        </section>
 
-      
-      <div class="control-buttons" style="margin: 24pt; ">
-        <div class="control-button" " >
-          <a href="index.html" class="link-control-button" ">Abbrechen</a>
-        </div>
-        <div class="control-button" >
-          <a href="reservierung-2.html" class="link-control-button" ">Zurück</a>
-        </div>
-        <div class="control-button" >
-          <a href="reservierung-confirm.html" class="link-control-button" ">Weiter</a>
-        </div>
-      </div>
+          <div class="control-buttons" style="margin: 24pt; ">
+            <div class="control-button">
+              <a href="index.html" class="link-control-button">Abbrechen</a>
+            </div>
+            <div class="control-button" >
+              <a href="reservierung-2.html" class="link-control-button">Zurück</a>
+            </div>
+            <div class="control-button" >
+              <button class="button_submit" formaction="reservierung-confirm.html">Bestätigen</button>
+            </div>
+          </div>
+        </form>
     </div>
 
     <footer class="one-col">
