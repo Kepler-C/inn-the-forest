@@ -158,9 +158,26 @@ a:active {
   color: black;
 }
 
+
 .link-button:hover {
   background-color: #939597;
   color: white;
+  border-color: #939597;
+}
+
+.link-control-button:link,
+.link-control-button:visited,
+.link-control-button:hover,
+.link-control-button:active {
+  text-decoration: none;
+  color: black;
+  
+}
+
+
+.link-control-button:hover{
+  background-color: white;
+  color: #939597;
   border-color: #939597;
 }
 
