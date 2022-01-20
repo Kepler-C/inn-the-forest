@@ -169,8 +169,12 @@ a:active {
 .link-control-button:visited,
 .link-control-button:hover,
 .link-control-button:active {
+  background-color: white; 
   text-decoration: none;
-  color: black;
+  color: black; 
+  border: none;
+  font-family: "M PLUS 1", sans-serif;
+  font-size: 15px;
   
 }
 
@@ -179,6 +183,22 @@ a:active {
   background-color: white;
   color: #939597;
   border-color: #939597;
+}
+
+.button_submit{
+  background-color: white; 
+  text-decoration: none;
+  color: black; 
+  border: none;
+  font-family: "M PLUS 1", sans-serif;
+  font-size: 15px;
+}
+
+.button_submit:hover{
+  background-color: white;
+  color: #939597;
+  border-color: #939597;
+  cursor:pointer;
 }
 
 #login,
