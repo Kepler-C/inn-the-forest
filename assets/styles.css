@@ -506,7 +506,7 @@ a:active {
   flex: 0 0 6%;
 }
 
-.modal {
+.reservation-modal {
   display: none; /* Hidden by default */
   position: fixed; /* Stay in place */
   z-index: 1; /* Sit on top */
