@@ -109,8 +109,8 @@
             </div>
 
             <div class="col col--text col--user-info">
-              <a href="platzauswahl.html" class="link-button">
-                <p class="button">Platzauswahl (optional)</p>
+              <a href="#" class="link-button">
+                <p class="button" id="table_selection">Platzauswahl (optional)</p>
               </a>
 
               <a href="#" class="link-button" id="menu-selection">
@@ -210,6 +210,123 @@
       <div class="modal__close">X</div>
       <div class="modal__title">Bestätigung</div>
       <div id="confirmation"></div>
+    </div>
+    <div class="modal" id="table_selection_modal">
+      <div class="modal__close">X</div>
+      <div class="modal__title">Tischauswahl</div>
+          <section class="one-col one-col--user-info restaurant-map">
+        <!-- <img id="Platzauswahl" src="./assets/restaurant.png" width="45%" height="60%" alt="" /> -->
+
+        <h2>Bitte einen Tisch auswählen:</h2>
+        <div class="indoor-zone">
+          <div class="row">
+            <div class="table" data-table-number="1">1</div>
+            <div class="hall-space"></div>
+            <div class="table table--reserved" data-table-number="2">2</div>
+            <div class="hall-space"></div>
+            <div class="table" data-table-number="3">3</div>
+            <div class="hall-space"></div>
+            <div class="table" data-table-number="4">4</div>
+            <div class="hall-space"></div>
+          </div>
+          <div class="row">
+            <div class="table" data-table-number="5">5</div>
+            <div class="hall-space"></div>
+            <div class="hall-space"></div>
+            <div class="table table--middle" data-table-number="6">6</div>
+            <div class="hall-space"></div>
+            <div class="table table--big" data-table-number="7">7</div>
+            <div class="hall-space"></div>
+            <div class="table table--middle" data-table-number="8">8</div>
+            <div class="hall-space"></div>
+            <div class="hall-space"></div>
+            <div
+              class="table table--middle table--reserved"
+              data-table-number="9"
+            >
+              9
+            </div>
+          </div>
+          <div class="row">
+            <div class="table table--reserved" data-table-number="10">10</div>
+            <div class="hall-space"></div>
+            <div class="hall-space"></div>
+            <div class="table table--middle" data-table-number="11">11</div>
+            <div class="hall-space"></div>
+            <div class="table table--big" data-table-number="12">12</div>
+            <div class="hall-space"></div>
+            <div class="table table--middle" data-table-number="13">13</div>
+            <div class="hall-space"></div>
+            <div class="hall-space"></div>
+            <div class="table table--middle" data-table-number="14">14</div>
+          </div>
+          <div class="row">
+            <div class="table" data-table-number="15">15</div>
+            <div class="hall-space"></div>
+            <div class="hall-space"></div>
+            <div class="table table--middle" data-table-number="16">16</div>
+            <div class="hall-space"></div>
+            <div
+              class="table table--big table--reserved"
+              data-table-number="17"
+            >
+              17
+            </div>
+            <div class="hall-space"></div>
+            <div
+              class="table table--middle table--reserved"
+              data-table-number="18"
+            >
+              18
+            </div>
+            <div class="hall-space"></div>
+            <div class="hall-space"></div>
+            <div class="table table--middle" data-table-number="19">19</div>
+          </div>
+        </div>
+        <div class="outdoor-zone">
+          <div class="row">
+            <div class="table" data-table-number="20">20</div>
+            <div class="hall-space"></div>
+            <div class="hall-space"></div>
+            <div class="table table--middle" data-table-number="21">21</div>
+            <div class="hall-space"></div>
+            <div class="table table--big" data-table-number="22">22</div>
+            <div class="hall-space"></div>
+            <div class="table table--middle" data-table-number="23">23</div>
+            <div class="hall-space"></div>
+            <div class="hall-space"></div>
+            <div
+              class="table table--middle table--reserved"
+              data-table-number="24"
+            >
+              24
+            </div>
+          </div>
+          <div class="row">
+            <div class="table table--reserved" data-table-number="25">25</div>
+            <div class="hall-space"></div>
+            <div class="hall-space"></div>
+            <div class="table table--middle" data-table-number="26">26</div>
+            <div class="hall-space"></div>
+            <div
+              class="table table--big table--reserved"
+              data-table-number="27"
+            >
+              27
+            </div>
+            <div class="hall-space"></div>
+            <div class="table table--middle" data-table-number="28">28</div>
+            <div class="hall-space"></div>
+            <div class="hall-space"></div>
+            <div class="table table--middle" data-table-number="29" data-test="3">29</div>
+          </div>
+        </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- <script src="./assets/reservation.js"></script> -->
     </div>
     <div id="overlay"></div>
     <script>

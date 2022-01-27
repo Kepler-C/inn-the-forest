@@ -1,6 +1,4 @@
 $(document).ready(function () {
-  console.log(reservation);
-
   const LOGIN_DATA = { username: 12345, password: "abc" };
 
   $("#overlay").on("click", () => {
@@ -33,6 +31,13 @@ $(document).ready(function () {
     $("#menu_modal").animate({ opacity: 1 }, 200);
   });
 
+  $("#table_selection").on("click", () => {
+    $("#table_selection_modal").css("display", "flex");
+    $("#overlay").css("display", "flex");
+    $("#overlay").animate({ opacity: 1 }, 200);
+    $("#table_selection_modal").animate({ opacity: 1 }, 200);
+  });
+
   $("#modal__submit").on("click", () => {
     if (
       LOGIN_DATA.username == $("#modal__username").val() &&
@@ -54,8 +59,7 @@ $(document).ready(function () {
 
   saveMenu = (menu) => {
     reservation.menu = menu;
-    console.log(reservation);
-    $("#menu-button").text(`Auswahl: ${menu}`);
+    $("#menu-button").text(`Menü: ${menu}`);
     closeModal();
   };
 
@@ -67,7 +71,6 @@ $(document).ready(function () {
     reservation.lname = $("#lname-input").val();
     reservation.phone = $("#phone-input").val();
     reservation.mail = $("#mail-input").val();
-    console.log(reservation);
   };
 
   $("#reservation-form").submit(function (e) {
@@ -79,7 +82,9 @@ $(document).ready(function () {
         reservation.date +
         " um " +
         reservation.time +
-        " Uhr mit " +
+        " Uhr an Tisch " +
+        reservation.table +
+        " mit " +
         reservation.guests +
         " Gäste(n) reserviert</p>"
     );
@@ -117,6 +122,15 @@ $(document).ready(function () {
     $("#overlay").animate({ opacity: 1 }, 200);
     $("#confirmation_modal").animate({ opacity: 1 }, 200);
     $("#reservation-form")[0].reset();
+  });
+
+  $(".table").on("click", function (event) {
+    event.preventDefault();
+    const table = $(this).data("tableNumber");
+    reservation.table = table;
+    $("#table_selection").text(`Tisch: ${table}`);
+
+    closeModal();
   });
 });
 
