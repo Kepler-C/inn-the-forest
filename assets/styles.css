@@ -423,3 +423,74 @@ a:active {
     width: 100%;
   }
 }
+
+.restaurant-map {
+  height: calc(100% - 50px);
+
+}
+
+.indoor-zone {
+  width: 70%;
+  height: 70%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  border: 1px solid brown;
+  padding: 5px;
+}
+
+.outdoor-zone {
+  width: 70%;
+  height: 30%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  border: 1px solid darkblue;
+  padding: 5px;
+  margin-top: 0;
+}
+
+.row {
+  display: flex;
+  margin: 15px 5px;
+  height: 10%;
+}
+
+.outdoor-zone .row {
+  height: calc(10% * 2.3);
+}
+
+.table {
+  background-color: tomato;
+  flex: 0 0 6%;
+  height: 100%;
+}
+
+.table--middle {
+  flex: 0 0 12%;
+}
+
+.table--big {
+  flex: 0 0 18%;
+}
+
+.table:not(.table--reserved) {
+  cursor: pointer;
+}
+
+.table:not(.table--reserved):hover {
+  background-color: darkcyan;;
+}
+
+.table--reserved {
+  background-color: rgb(223, 194, 189);
+}
+
+.table--reserved:hover {
+  background-color: rgb(223, 194, 189);
+  cursor: not-allowed
+}
+
+.hall-space {
+  flex: 0 0 6%;
+}
