@@ -109,8 +109,9 @@ a:active {
 
 .col--user-info {
   display: flex;
-  flex-direction: column;
-  width: 60%;
+  flex-direction: row;
+  gap: 15px;
+  width: 100%;
 }
 
 .one-col--user-info {
