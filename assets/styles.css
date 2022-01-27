@@ -1,9 +1,11 @@
+html,
 body {
   height: 100vh;
   margin: 0;
   font-family: "M PLUS 1", sans-serif;
   font-family: "Montserrat", sans-serif;
   text-align: center;
+  overflow: auto;
 }
 
 header {
@@ -46,7 +48,6 @@ a {
 .one-col {
   display: flex;
   flex-direction: column;
-  justify-content: center;
 }
 
 .two-cols {
