@@ -271,6 +271,8 @@ a:active {
 
 .menu__plate img {
   width: 20vw;
+  border-radius: 10px;
+  box-shadow: 0 0 10px 3px rgba(0, 0, 0, 0.2); ;
 }
 
 /* login */
@@ -288,7 +290,7 @@ a:active {
   opacity: 0;
 }
 
-#modal {
+.modal {
   z-index: 11;
   background-color: white;
   position: absolute;
@@ -302,7 +304,7 @@ a:active {
   opacity: 0;
 }
 
-#modal__close {
+.modal__close {
   position: absolute;
   right: 20px;
   top: 10px;
@@ -312,12 +314,12 @@ a:active {
   transition: 0.5s;
 }
 
-#modal__close:hover {
+.modal__close:hover {
   cursor: pointer;
   color: rgb(218, 0, 0);
 }
 
-#modal__title {
+.modal__title {
   font-size: 4rem;
   font-weight: bolder;
   margin: 20px 0;
@@ -355,6 +357,11 @@ a:active {
   color: red;
   font-weight: bolder;
   font-size: small;
+}
+
+.selectable:hover {
+  cursor: pointer;
+  filter: brightness(1.1);
 }
 
 /* Employee */
