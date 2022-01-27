@@ -79,30 +79,34 @@
 
               <label for="payment">Bezahlungsmethode (optional)</label>
               <button
-                class="control-button"
+                class="control-button payment-button"
                 type="button"
                 onclick="savePayment('Visa')"
+                id="payment-Visa"
               >
                 Visa
               </button>
               <button
-                class="control-button"
+                class="control-button payment-button"
                 type="button"
                 onclick="savePayment('Mastercard')"
+                id="payment-Mastercard"
               >
                 Mastercard
               </button>
               <button
-                class="control-button"
+                class="control-button payment-button"
                 type="button"
                 onclick="savePayment('PayPal')"
+                id="payment-PayPal"
               >
                 PayPal
               </button>
               <button
-                class="control-button"
+                class="control-button payment-button"
                 type="button"
                 onclick="savePayment('Klarna')"
+                id="payment-Klarna"
               >
                 Klarna
               </button>
@@ -110,7 +114,9 @@
 
             <div class="col col--text col--user-info">
               <a href="#" class="link-button">
-                <p class="button" id="table_selection">Platzauswahl (optional)</p>
+                <p class="button" id="table_selection">
+                  Platzauswahl (optional)
+                </p>
               </a>
 
               <a href="#" class="link-button" id="menu-selection">
@@ -135,7 +141,7 @@
           <div class="control-button">
             <a href="index.html" class="link-control-button">Abbrechen</a>
           </div>
-          <div class="control-button">
+          <div>
             <button class="button_submit" type="submit">Reservieren</button>
           </div>
         </div>
@@ -214,7 +220,7 @@
     <div class="modal" id="table_selection_modal">
       <div class="modal__close">X</div>
       <div class="modal__title">Tischauswahl</div>
-          <section class="one-col one-col--user-info restaurant-map">
+      <section class="one-col one-col--user-info restaurant-map">
         <div class="indoor-zone">
           <div class="row">
             <div class="table" data-table-number="1">1</div>
@@ -316,9 +322,13 @@
             <div class="table table--middle" data-table-number="28">28</div>
             <div class="hall-space"></div>
             <div class="hall-space"></div>
-            <div class="table table--middle" data-table-number="29" data-test="3">29</div>
-          </div>
-        </div>
+            <div
+              class="table table--middle"
+              data-table-number="29"
+              data-test="3"
+            >
+              29
+            </div>
           </div>
         </div>
       </section>

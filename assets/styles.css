@@ -151,6 +151,21 @@ a:active {
   justify-content: space-between;
 }
 
+.control-button {
+  background-color: rgb(211, 211, 211);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 10px;
+  border-radius: 5px;
+  border: none;
+}
+
+.control-button:hover {
+  cursor: pointer;
+  filter: brightness(1.1);
+}
+
 .link-button:link,
 .link-button:visited,
 .link-button:hover,
@@ -167,20 +182,12 @@ a:active {
 
 .link-control-button:link,
 .link-control-button:visited,
-.link-control-button:hover,
 .link-control-button:active {
-  background-color: white;
   text-decoration: none;
   color: black;
   border: none;
   font-family: "M PLUS 1", sans-serif;
-  font-size: 2px;
-}
-
-.link-control-button:hover {
-  background-color: white;
-  color: #939597;
-  border-color: #939597;
+  font-size: 20px;
 }
 
 .button_submit {
