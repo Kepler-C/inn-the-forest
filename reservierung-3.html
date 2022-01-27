@@ -33,10 +33,34 @@
         <section class="one-col one-col--user-info">
           <div class="col col--text col--user-info">
             <label for="payment">Bezahlungsmethode (optional)</label>
-            <button class="control-button" type="button">Visa</button>
-            <button class="control-button" type="button">Mastercard</button>
-            <button class="control-button" type="button">PayPal</button>
-            <button class="control-button" type="button">Klarna</button>
+            <button
+              class="control-button"
+              onclick="savePayment('Visa')"
+              type="button"
+            >
+              Visa
+            </button>
+            <button
+              class="control-button"
+              onclick="savePayment('Mastercard')"
+              type="button"
+            >
+              Mastercard
+            </button>
+            <button
+              class="control-button"
+              onclick="savePayment('PayPal')"
+              type="button"
+            >
+              PayPal
+            </button>
+            <button
+              class="control-button"
+              onclick="savePayment('Klarna')"
+              type="button"
+            >
+              Klarna
+            </button>
           </div>
 
           <div class="col col--text col--user-info">

@@ -1,7 +1,7 @@
 $(document).ready(function () {
-  const LOGIN_DATA = { username: 12345, password: "abc" };
+  console.log(reservation);
 
-  let reservation = {};
+  const LOGIN_DATA = { username: 12345, password: "abc" };
 
   $("#overlay").on("click", () => {
     closeModal();
@@ -58,6 +58,35 @@ $(document).ready(function () {
     $("#menu-button").text(`Auswahl: ${menu}`);
     closeModal();
   };
+
+  saveData = () => {
+    reservation.date = $("#date-input").val();
+    reservation.time = $("#time-input").val();
+    reservation.guests = $("#guests-input").val();
+    reservation.fname = $("#fname-input").val();
+    reservation.lname = $("#lname-input").val();
+    reservation.phone = $("#phone-input").val();
+    reservation.mail = $("#mail-input").val();
+    console.log(reservation);
+  };
+
+  if (reservation.payment) {
+    $("#confirmation").append(
+      "<p>" +
+        "Sie haben bereits mit " +
+        reservation.payment +
+        " bezahlt" +
+        "</p>"
+    );
+  }
 });
 
+let reservation = {};
+
 function saveMenu(menu) {}
+
+function saveData() {}
+
+function savePayment(payment) {
+  reservation.payment = payment;
+}
