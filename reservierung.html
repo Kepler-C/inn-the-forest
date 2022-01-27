@@ -30,34 +30,30 @@
     </header>
 
     <div class="main-content">
-      <form action="reservierung-confirm.html">
+      <form action="reservierung-2.html" onsubmit="saveData(); alert(2)">
         <section class="one-col one-col--user-info">
           <div class="main-content">
-
             <div class="col col--text col--user-info">
               <label for="date-input">Datum*</label>
               <input
                 id="date-input"
                 type="date"
                 name="reservation-date"
-                required />
-              
+                required
+              />
+
               <label for="time-input">Uhrzeit*</label>
               <input
                 id="time-input"
                 type="time"
                 name="reservation-time"
-                required />
-                
+                required
+              />
             </div>
 
             <div class="col col--text col--user-info">
               <label for="fname-input">Vorname*</label>
-              <input
-                id="fname-input"
-                type="text"
-                name="first-name"
-                required />
+              <input id="fname-input" type="text" name="first-name" required />
 
               <label for="lname-input">Nachname*</label>
               <input id="lname-input" type="text" name="last-name" required />
@@ -79,7 +75,8 @@
                 name="number-guests"
                 min="1"
                 max="10"
-                required />
+                required
+              />
 
               <label for="payment">Bezahlungsmethode (optional)</label>
               <button class="control-button" type="button">Visa</button>
@@ -109,7 +106,6 @@
               ></textarea>
             </div>
           </div>
-          
         </section>
 
         <div class="control-buttons" style="margin: 24pt">
@@ -117,7 +113,7 @@
             <a href="index.html" class="link-control-button">Abbrechen</a>
           </div>
           <div class="control-button">
-            <button class="button_submit" type="submit">Weiter</button>
+            <button class="button_submit" type="submit">Reservieren</button>
           </div>
         </div>
       </form>
@@ -186,6 +182,20 @@
           </div>
         </div>
       </div>
+    </div>
+    <div class="modal" id="confirmation_modal">
+      <div class="modal__close">X</div>
+      <div class="modal__title">Bestätigung</div>
+      <p>
+        Danke für Ihre Reservierung für den: 28.10.2017 um 09:00 Uhr für 6
+        Personen!
+      </p>
+      <p>
+        Wir haben Ihnen zusätzlich eine Bestätigungs-Email zugeschickt als
+        Erinnerung für den Termin.
+      </p>
+      <p>Wir freuen uns auf Ihren Besuch Inn the Forest!</p>
+      <p>Sie können nun zur Homepage zurück gehen!</p>
     </div>
     <div id="overlay"></div>
   </body>
