@@ -12,7 +12,10 @@ header {
   min-height: 50px;
   background-color: #9a8b4f;
   color: white;
+  
 }
+
+
 
 .main-content {
   width: 80%;
@@ -62,10 +65,12 @@ a {
 .col {
   margin: 10px;
   flex-basis: 50%;
+  
 }
 
 .col--text {
   padding: 20px;
+  
 }
 
 nav {
@@ -174,7 +179,7 @@ a:active {
   color: black;
   border: none;
   font-family: "M PLUS 1", sans-serif;
-  font-size: 2px;
+  font-size: 20px;
 }
 
 .link-control-button:hover {
@@ -201,8 +206,9 @@ a:active {
 
 #login,
 #logout {
-  position: absolute;
-  right: 10px;
+  position: relative;
+  right: 0px;
+  left: 25%;
   height: 30px;
   margin: 10px 0;
   padding: 0 10px;
