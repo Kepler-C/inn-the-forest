@@ -135,6 +135,7 @@ $(document).ready(function () {
 });
 
 let reservation = {};
+let currentPayment;
 
 function saveMenu(menu) {}
 
@@ -143,5 +144,8 @@ function saveData() {}
 function savePayment(payment) {
   reservation.payment = payment;
   $(".payment-button").css("background-color", "rgb(211, 211, 211)");
-  $("#payment-" + payment).css("background-color", "rgb(91, 131, 243)");
+  if (payment != currentPayment) {
+    currentPayment = payment;
+    $("#payment-" + payment).css("background-color", "rgb(91, 131, 243)");
+  } else currentPayment = "";
 }
