@@ -41,32 +41,43 @@
 
           <div class="col col--text col--user-info">
             <label for="comments">Kommentar</label>
-            <textarea id="comments" name="comments" placeholder="Besondere Wünsche..." rows="5" cols="50"></textarea>
+            <textarea
+              id="comments"
+              name="comments"
+              placeholder="Besondere Wünsche..."
+              rows="5"
+              cols="50"
+            ></textarea>
           </div>
           <div>3/3</div>
         </section>
 
-          <div class="control-buttons" style="margin: 24pt; ">
-            <div class="control-button">
-              <a href="index.html" class="link-control-button">Abbrechen</a>
-            </div>
-            <div class="control-button" >
-              <a href="reservierung-2.html" class="link-control-button">Zurück</a>
-            </div>
-            <div class="control-button" >
-              <button class="button_submit" formaction="reservierung-confirm.html">Bestätigen</button>
-            </div>
+        <div class="control-buttons" style="margin: 24pt">
+          <div class="control-button">
+            <a href="index.html" class="link-control-button">Abbrechen</a>
           </div>
-        </form>
+          <div class="control-button">
+            <a href="reservierung-2.html" class="link-control-button">Zurück</a>
+          </div>
+          <div class="control-button">
+            <button
+              class="button_submit"
+              formaction="reservierung-confirm.html"
+            >
+              Bestätigen
+            </button>
+          </div>
+        </div>
+      </form>
     </div>
 
     <footer class="one-col">
       <div>Inn The Forest | 2022</div>
     </footer>
 
-    <div id="modal">
-      <div id="modal__close">X</div>
-      <div id="modal__title">Anmeldung</div>
+    <div class="modal" id="login_modal">
+      <div class="modal__close">X</div>
+      <div class="modal__title">Anmeldung</div>
       <input
         class="modal__input"
         id="modal__username"
