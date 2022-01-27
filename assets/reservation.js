@@ -10,8 +10,16 @@
 
     function showNotice(event) {
         let tableNr = event.target.dataset.tableNumber;
+        let tableType = '';
+        if (event.target.classList.contains('table--middle')){
+            tableType = ' (4 Personen)';
+        } else if (event.target.classList.contains('table--big')) {
+            tableType = ' (6 Personen)';
+        } else {
+            tableType =  ' (2 Personen)';
+        }
         let noticeBox = document.querySelector('#noticeContent');
-        noticeBox.innerHTML = "Wollen Sie den Tisch Nr. " + tableNr + " auswählen?";
+        noticeBox.innerHTML = "Wollen Sie den Tisch Nr. " + tableNr +  tableType + " auswählen?";
         modal.style.display = 'block';
     }
 
