@@ -20,6 +20,8 @@
         }
         let noticeBox = document.querySelector('#noticeContent');
         noticeBox.innerHTML = "Wollen Sie den Tisch Nr. " + tableNr +  tableType + " auswählen?";
+        let link = document.querySelector('#accept-link');
+        link.href = "reservierung.html?table=" + tableNr;
         modal.style.display = 'block';
     }
 
