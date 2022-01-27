@@ -1,7 +1,7 @@
 $(document).ready(function () {
-  const LOGIN_DATA = { username: 12345, password: "abc" };
+  console.log(reservation);
 
-  let reservation = {};
+  const LOGIN_DATA = { username: 12345, password: "abc" };
 
   $("#overlay").on("click", () => {
     closeModal();
@@ -58,6 +58,74 @@ $(document).ready(function () {
     $("#menu-button").text(`Auswahl: ${menu}`);
     closeModal();
   };
+
+  saveData = () => {
+    reservation.date = $("#date-input").val();
+    reservation.time = $("#time-input").val();
+    reservation.guests = $("#guests-input").val();
+    reservation.fname = $("#fname-input").val();
+    reservation.lname = $("#lname-input").val();
+    reservation.phone = $("#phone-input").val();
+    reservation.mail = $("#mail-input").val();
+    console.log(reservation);
+  };
+
+  $("#reservation-form").submit(function (e) {
+    e.preventDefault();
+    $("#confirmation").empty();
+    $("#confirmation").append("<p>Vielen Dank!</p>");
+    $("#confirmation").append(
+      "<p>Sie haben für den " +
+        reservation.date +
+        " um " +
+        reservation.time +
+        " Uhr mit " +
+        reservation.guests +
+        " Gäste(n) reserviert</p>"
+    );
+    $("#confirmation").append(
+      "<p>Ihre Daten sind: </p> <p> Vorname: " +
+        reservation.fname +
+        ", Nachname: " +
+        reservation.lname +
+        ", Tel:  " +
+        reservation.phone +
+        ", E-Mail:  " +
+        reservation.mail +
+        "</p>"
+    );
+    if (reservation.payment) {
+      $("#confirmation").append(
+        "<p>" +
+          "Sie haben bereits mit " +
+          reservation.payment +
+          " bezahlt" +
+          "</p>"
+      );
+    }
+    $("#confirmation").append(
+      "<p> " +
+        "Wir haben Ihnen zusätzlich eine Bestätigungs-Email zugeschickt als " +
+        "Erinnerung für den Termin." +
+        " </p>" +
+        "<p>Wir freuen uns auf Ihren Besuch Inn the Forest!</p>" +
+        " <p>Sie können nun zur Homepage zurück gehen!</p>"
+    );
+
+    $("#confirmation_modal").css("display", "flex");
+    $("#overlay").css("display", "flex");
+    $("#overlay").animate({ opacity: 1 }, 200);
+    $("#confirmation_modal").animate({ opacity: 1 }, 200);
+    $("#reservation-form")[0].reset();
+  });
 });
 
+let reservation = {};
+
 function saveMenu(menu) {}
+
+function saveData() {}
+
+function savePayment(payment) {
+  reservation.payment = payment;
+}
