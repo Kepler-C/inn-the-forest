@@ -124,7 +124,7 @@ $(document).ready(function () {
     $("#reservation-form")[0].reset();
   });
 
-  $(".table").on("click", function (event) {
+  $(".table:not(.table--reserved)").on("click", function (event) {
     event.preventDefault();
     const table = $(this).data("tableNumber");
     reservation.table = table;
